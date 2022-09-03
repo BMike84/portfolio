@@ -4,6 +4,7 @@ import titles from "./HeroData";
 
 const Hero = () => {
   const [titleIndex, setTitleIndex] = useState(0);
+  const [fadeIn, setFadeIn] = useState(false);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -13,7 +14,7 @@ const Hero = () => {
         }
         return prevTitleIndex + 1;
       });
-    }, 2000);
+    }, 3000);
     return () => clearInterval(interval);
   }, []);
 
@@ -21,7 +22,13 @@ const Hero = () => {
     <section id="hero">
       <div className="bio">
         <h1>I'm Michael,</h1>
-        <h2 className={titles[titleIndex].class}>
+        <h2
+          className={
+            titles[titleIndex].class === "full-stack"
+              ? `${titles[titleIndex].class} fade-out`
+              : `${titles[titleIndex].class} fade-in`
+          }
+        >
           {titles[titleIndex].icon}
           <span>{titles[titleIndex].title}</span>
         </h2>

@@ -21,6 +21,7 @@
     }
   }
 }
+
   .full-stack {
     color: #50ABFF;
   }
@@ -32,4 +33,12 @@
 
 .hero-img {
   width: 50%;
+}
+
+.fade-in {
+  transition: opacity 2s ease;
+}
+.fade-out {
+  opacity: 0;
+  transition: opacity 2s ease;
 }
