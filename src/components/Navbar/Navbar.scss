@@ -1,0 +1,29 @@
+#nav {
+  padding: 8px 40px;
+  height: 65px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: 900;
+  font-size: 1.5em;
+  display: flex;
+  gap: .5em;
+}
+
+.links {
+  display: flex;
+  gap: 2rem;
+  font-weight: 500;
+}
+
+.contact-btn {
+  font-weight: 900;
+  font-size: 1.3em;
+  border-radius: 75px;
+  padding: 12px 32px;
+  background-color: #3e3c3c;
+  cursor: pointer;
+}

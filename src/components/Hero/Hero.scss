@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap');
+
+#hero {
+  margin: 0 50px;
+}
+
+.bio {
+  width: 50%;
+  
+  h1 {
+    font-size: 52px;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  h2 {
+    font-size: 60px;
+    
+
+    span {
+      margin-left: 10px;
+    }
+  }
+}
+  .full-stack {
+    color: #50ABFF;
+  }
+
+  .shopify {
+    color: #94BE47;
+
+  }
+
+.hero-img {
+  width: 50%;
+}
