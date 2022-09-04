@@ -4,6 +4,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: #d15555;
 }
 
 .logo {
@@ -16,7 +17,8 @@
 .links {
   display: flex;
   gap: 2rem;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 700;
 }
 
 .contact-btn {
@@ -24,6 +26,7 @@
   font-size: 1.3em;
   border-radius: 75px;
   padding: 12px 32px;
-  background-color: #3e3c3c;
+  background-color: #4d4a4a;
+  color: #94BE47;
   cursor: pointer;
 }
