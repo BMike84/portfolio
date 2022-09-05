@@ -1,10 +1,11 @@
 import React from "react";
+import { Element } from "react-scroll";
 import "./Services.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Services = () => {
   return (
-    <section id="services">
+    <Element id="services" name="services">
       <div className="service-header">
         <h1>
           Check out my <span>services</span>
@@ -53,7 +54,7 @@ const Services = () => {
           </p>
         </div>
       </div>
-    </section>
+    </Element>
   );
 };
 
