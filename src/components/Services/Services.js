@@ -5,9 +5,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const Services = () => {
   return (
     <section id="services">
-      <h1>
-        Check out my <span>services</span>
-      </h1>
+      <div className="service-header">
+        <h1>
+          Check out my <span>services</span>
+        </h1>
+        <p>
+          All services come with 100% money back gurantee if your not satisfied
+        </p>
+      </div>
       <div className="cards">
         <div className="service-cards shopify">
           <h3>
