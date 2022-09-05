@@ -1,8 +1,12 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
+//Files
 import TextAnimations from "../Animations/TextAnimations";
+//Scss Font Awesome
 import "./Hero.scss";
-import laptop from "../images/laptop.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+//Hero Image
+import laptop from "../images/laptop.jpg";
 
 const Hero = () => {
   return (
@@ -17,7 +21,9 @@ const Hero = () => {
           and customized services. I provide a wide range of services to ensure
           your stores success.
         </h5>
-        <a className="btn-grad ">Contact Me</a>
+        <NavLink to="/contact" className="btn-grad">
+          Contact Me
+        </NavLink>
       </div>
       <div className="hero-img">
         <img src={laptop} />
