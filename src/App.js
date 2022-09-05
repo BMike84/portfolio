@@ -4,13 +4,14 @@ import { Routes, Route } from "react-router-dom";
 import Contact from "./components/Contact/Contact";
 import Navbar from "./components/Navbar/Navbar";
 import AllProjects from "./components/Projects/AllProjects";
+import About from "./components/About/About";
 
 // Scss
 import "./App.scss";
 
 // Font Awesome
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { faCode } from "@fortawesome/free-solid-svg-icons";
+import { faCode, faPencil } from "@fortawesome/free-solid-svg-icons";
 import {
   faShopify,
   faPagelines,
@@ -18,7 +19,7 @@ import {
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 import Home from "./components/Home/Home";
-library.add(faCode, faShopify, faPagelines, faGithub, faLinkedin);
+library.add(faCode, faShopify, faPagelines, faGithub, faLinkedin, faPencil);
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/projects" element={<AllProjects />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/about" element={<About />} />
       </Routes>
     </main>
   );

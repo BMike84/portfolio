@@ -1,20 +1,30 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
+
+//Scss Font Awesome
 import "./Navbar.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const Navbar = () => {
   return (
     <nav id="nav">
       <div className="logo">
-        <FontAwesomeIcon icon="fa-solid fa-code" />
-        <a>Michael Buffone</a>
+        <NavLink to="/">
+          <span>
+            <FontAwesomeIcon icon="fa-solid fa-code" />
+          </span>
+          Michael Buffone
+        </NavLink>
       </div>
       <div className="links">
-        <a>Home</a>
-        <a>Projects</a>
-        <a>Skills</a>
-        <a>About Me</a>
+        <NavLink to="/">Home</NavLink>
+        <NavLink to="/">Services</NavLink>
+        <NavLink to="/projects">Projects</NavLink>
+        <NavLink to="/">Skills</NavLink>
+        <NavLink to="/about">About Me</NavLink>
       </div>
-      <a className="btn-contact">Contact Me</a>
+      <NavLink className="btn-contact" to="contact">
+        Contact Me
+      </NavLink>
     </nav>
   );
 };

@@ -1,0 +1,52 @@
+@import "../variables";
+
+#services {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  h1 {
+    text-align: center;
+    color: $lightgrey;
+    font-size: 3rem;
+    margin-bottom: 50px;
+     
+    span {
+      background-image: linear-gradient(to right, $mainRed 0%, #b31217  51%, #e52d27  100%);
+      background-clip: text;
+      color: transparent;
+     }
+  }
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+
+.service-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 20%;
+  padding: 10px 30px;
+  background-color: #322d2d;
+  border-width: 3px;
+  border-style: solid;
+  border-image: linear-gradient(to right, $mainRed, #e52d27) 1;
+  transition: transform .2s;
+
+  h3 {
+    font-size: 1.6em;
+  }
+
+  p {
+    color: $lightgrey;
+    font-size: 1.1rem;
+  }
+}
+
+.service-cards:hover {
+  transform: translate(0, -10px);
+}

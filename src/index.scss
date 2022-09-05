@@ -1,4 +1,9 @@
+@import './components/variables';
+
 html, body {
   margin: 0;
   font-family: 'Satoshi variable', sans-serif;
+  background-color: $mainBackground;
+  height: 100%;
+  width: 100vw;
 }
