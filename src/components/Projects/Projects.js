@@ -1,6 +1,12 @@
 import React from "react";
-import ProjectData from "./ProjectData";
+import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+import { Carousel } from "react-responsive-carousel";
+import ShopifyProjects from "./ShopifyProjects";
+import WebProjects from "./WebProjects";
+
+//Scss
 import "./Projects.scss";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Projects = () => {
@@ -9,23 +15,88 @@ const Projects = () => {
       <h1>
         Some of my <span>projects</span>
       </h1>
-      <div className="cards">
-        {ProjectData.map((item) => {
-          return (
-            <div className="proj-cards">
-              <img src={item.image}></img>
-              <h3>{item.title}</h3>
-              <p>{item.description}</p>
-              <a href={item.link} target="blank">
-                View Project
-                <span>
-                  <FontAwesomeIcon icon="fa-solid fa-share" />
-                </span>
-              </a>
-            </div>
-          );
-        })}
-      </div>
+      <Tabs>
+        <TabList className="tabs-list">
+          <Tab className="shopify-tab">
+            <p>
+              <span>
+                <FontAwesomeIcon icon="fa-brands fa-shopify" />
+              </span>
+              Shopify
+            </p>
+          </Tab>
+          <Tab className="full-stack-tab">
+            <p>
+              <span>
+                <FontAwesomeIcon icon="fa-brands fa-pagelines" />
+              </span>
+              Web Development
+            </p>
+          </Tab>
+        </TabList>
+        <div className="cards">
+          <TabPanel className="cards">
+            {ShopifyProjects.map((item) => {
+              return (
+                <div className="proj-cards card-shopify">
+                  <h3>{item.title}</h3>
+                  <Carousel>
+                    <div>
+                      <img src={item.image} />
+                      <a href={item.link} className="legend" target="blank">
+                        View Project
+                      </a>
+                    </div>
+                    <div>
+                      <img src={item.image2} />
+                      <a href={item.link} className="legend" target="blank">
+                        View Project
+                      </a>
+                    </div>
+                    <div>
+                      <img src={item.image3} />
+                      <a href={item.link} className="legend" target="blank">
+                        View Project
+                      </a>
+                    </div>
+                  </Carousel>
+                  {/* <p>{item.description}</p> */}
+                </div>
+              );
+            })}
+          </TabPanel>
+          <TabPanel className="cards">
+            {WebProjects.map((item) => {
+              return (
+                <div className="proj-cards card-shopify">
+                  <h3>{item.title}</h3>
+                  <Carousel>
+                    <div>
+                      <img src={item.image} />
+                      <a href={item.link} className="legend" target="blank">
+                        View Project
+                      </a>
+                    </div>
+                    <div>
+                      <img src={item.image2} />
+                      <a href={item.link} className="legend" target="blank">
+                        View Project
+                      </a>
+                    </div>
+                    <div>
+                      <img src={item.image3} />
+                      <a href={item.link} className="legend" target="blank">
+                        View Project
+                      </a>
+                    </div>
+                  </Carousel>
+                  {/* <p>{item.description}</p> */}
+                </div>
+              );
+            })}
+          </TabPanel>
+        </div>
+      </Tabs>
       {/* <button className="view-all">View All Projects</button> */}
     </section>
   );

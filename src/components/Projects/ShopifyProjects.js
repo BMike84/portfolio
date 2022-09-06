@@ -1,10 +1,17 @@
+// routes clothes
 import landing from "../images/routes-clothes/landing.png";
-import waitlist from "../images/cut-the-line/Waitlist.png";
+import summer from "../images/routes-clothes/summer.png";
+import collection from "../images/routes-clothes/collections.png";
+//galaxy box
 import box from "../images/galaxy/box.png";
+import affiliate from "../images/galaxy/affiliate.png";
+import landingBox from "../images/galaxy/landing.png";
 
-const ProjectData = [
+const ShopifyProjects = [
   {
     image: landing,
+    image2: summer,
+    image3: collection,
     link: "https://routes-clothes.myshopify.com/?_ab=0&_fd=0&_sc=1",
     description: "Clothing Store built on shopify",
     title: "Routes Clothes",
@@ -12,16 +19,12 @@ const ProjectData = [
 
   {
     image: box,
+    image2: affiliate,
+    image: landingBox,
     link: "https://galaxy-box-11.myshopify.com/?_ab=0&_fd=0&_sc=1",
     description: "Galaxy Box Product",
     title: "Galaxy Box",
   },
-  {
-    image: waitlist,
-    link: "https://github.com/BMike84/cut-the-line",
-    description: "Waitlist application",
-    title: "Cut The Line",
-  },
 ];
 
-export default ProjectData;
+export default ShopifyProjects;

@@ -12,12 +12,44 @@
     text-align: center;
     color: $lightgrey;
     font-size: 3rem;
+    margin-top: 90px;
      
     span {
       background-image: linear-gradient(to right, $mainRed 0%, #b31217  51%, #e52d27  100%);
       background-clip: text;
       color: transparent;
      }
+  }
+}
+
+.react-tabs {
+  width: 100%;
+}
+
+.tabs-list {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.shopify-tab {
+    font-size: 2rem;
+    color: $shopifyGreen;
+    
+    span {
+      margin-right: 10px;
+    }
+}
+
+.full-stack-tab {
+  font-size: 2rem;
+  color: $fullStackBlue;
+
+  span {
+    margin-right: 10px;
   }
 }
 
@@ -29,16 +61,15 @@
 }
 
 .proj-cards {
-  height: 550px;
+  text-align: center;
+  height: 350px;
   width: 30%;
   padding: 26px 35px;
   transition: transform .2s;
-  border-width: 3px;
-  border-style: solid;
-  border-image: linear-gradient(to right, $mainRed, #e52d27) 1;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   
   img {
-    height: 65%;
+    height: 70%;
     width: 100%;
     background-repeat: no-repeat;
     background-size: contain;
@@ -46,12 +77,10 @@
 
   h3 {
     font-size: 1.9rem;
-    color: $fullStackBlue;
   }
 
   p {
     font-size: 1.2rem;
-    color: $shopifyGreen;
   }
 
   a {
@@ -68,6 +97,10 @@
 
 .proj-cards:hover {
   transform: translate(0, -10px);
+}
+
+.card-shopify {
+  color: $shopifyGreen;
 }
 
 
