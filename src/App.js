@@ -13,7 +13,7 @@ import "./App.scss";
 
 // Font Awesome
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { faCode, faPencil } from "@fortawesome/free-solid-svg-icons";
+import { faCode, faPencil, faShare } from "@fortawesome/free-solid-svg-icons";
 import {
   faShopify,
   faPagelines,
@@ -21,7 +21,15 @@ import {
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 
-library.add(faCode, faShopify, faPagelines, faGithub, faLinkedin, faPencil);
+library.add(
+  faCode,
+  faShopify,
+  faPagelines,
+  faGithub,
+  faLinkedin,
+  faPencil,
+  faShare
+);
 
 function App() {
   return (
@@ -30,7 +38,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="projects" element={<AllProjects />} />
+          {/* <Route path="projects" element={<AllProjects />} /> */}
           <Route path="contact" element={<Contact />} />
           <Route path="about" element={<About />} />
         </Routes>
