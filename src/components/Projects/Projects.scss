@@ -55,14 +55,11 @@
 
 .cards {
   display: flex;
-  flex-wrap: wrap;
-  gap: 4em;
-
+  align-items: center;
 }
 
 .proj-cards {
   text-align: center;
-  height: 350px;
   width: 30%;
   padding: 26px 35px;
   transition: transform .2s;
@@ -102,6 +99,10 @@
 .card-shopify {
   color: $shopifyGreen;
 }
+.card-full-stack {
+  color: $fullStackBlue;
+  margin: 0;
+}
 
 
 .view-all {
@@ -125,3 +126,4 @@
   color: #fff;
   text-decoration: none;
 }
+

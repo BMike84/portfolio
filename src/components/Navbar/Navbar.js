@@ -22,14 +22,28 @@ const Navbar = () => {
       <div className="links">
         <NavLink to="/">Home</NavLink>
         {window.location.href === "http://localhost:3000/" ? (
-          <Link to="services" spy={true} smooth={true} duration={1000}>
+          <Link
+            to="services"
+            spy={true}
+            smooth={true}
+            duration={1000}
+            offset={-100}
+          >
             Services
           </Link>
         ) : (
           <NavLink to="/">Services</NavLink>
         )}
 
-        <NavLink to="projects">Projects</NavLink>
+        <Link
+          to="projects"
+          spy={true}
+          smooth={true}
+          // offset={}
+          duration={1000}
+        >
+          Projects
+        </Link>
         <NavLink to="about">About Me</NavLink>
       </div>
       <NavLink className="btn-contact" to="contact">
