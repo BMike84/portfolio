@@ -13,7 +13,14 @@ import "./App.scss";
 
 // Font Awesome
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { faCode, faPencil, faShare } from "@fortawesome/free-solid-svg-icons";
+import {
+  faCode,
+  faPencil,
+  faShare,
+  faEnvelope,
+  faPhone,
+  faLocationPin,
+} from "@fortawesome/free-solid-svg-icons";
 import {
   faShopify,
   faPagelines,
@@ -28,7 +35,10 @@ library.add(
   faGithub,
   faLinkedin,
   faPencil,
-  faShare
+  faShare,
+  faEnvelope,
+  faPhone,
+  faLocationPin
 );
 
 function App() {
