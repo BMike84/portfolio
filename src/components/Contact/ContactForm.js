@@ -1,17 +1,21 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import { useForm } from "react-hook-form";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function ContactForm() {
-  const name = useRef(null);
-  const email = useRef(null);
-  const message = useRef(null);
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors },
+  } = useForm();
 
   const form = useRef();
 
   const sendEmail = (e) => {
-    e.preventDefault();
+    // e.preventDefault();
 
     emailjs
       .sendForm(
@@ -29,57 +33,62 @@ function ContactForm() {
         }
       );
 
-    e.target.reset();
+    reset();
   };
   return (
-    <form ref={form} onSubmit={sendEmail}>
+    <>
       <h5>FIll Form Below</h5>
-      <div>
-        <label>
-          <span>
-            <FontAwesomeIcon icon="fa-solid fa-user" />
-          </span>
-          Name
-        </label>
-        <input
-          ref={name}
-          type="text"
-          name="user_name"
-          placeholder="First Name"
-          required
-        />
-      </div>
-      <div>
-        <label>
-          <span>
-            <FontAwesomeIcon icon="fa-solid fa-envelope" />
-          </span>
-          Email
-        </label>
-        <input
-          ref={email}
-          type="email"
-          name="user_email"
-          placeholder="Enter your email"
-          required
-        />
-      </div>
-      <div>
-        <label>
-          <span>
-            <FontAwesomeIcon icon="fa-solid fa-message" />
-          </span>
-          Message
-        </label>
-        <textarea
-          ref={message}
-          name="message"
-          placeholder="Enter your message"
-          required
-        />
-        <input className="btn-grad" type="submit" value="Submit Now" />
-      </div>
-    </form>
+      <form onSubmit={handleSubmit(sendEmail)} ref={form}>
+        <div>
+          <label>
+            <span>
+              <FontAwesomeIcon icon="fa-solid fa-user" />
+            </span>
+            Name
+          </label>
+          <input
+            type="text"
+            name="user_name"
+            placeholder="First Name"
+            {...register("user_name", { required: true })}
+          />
+          {errors.user_name && <p>Name is required.</p>}
+        </div>
+        <div>
+          <label>
+            <span>
+              <FontAwesomeIcon icon="fa-solid fa-envelope" />
+            </span>
+            Email
+          </label>
+          <input
+            type="email"
+            name="user_email"
+            placeholder="Enter your email"
+            {...register("user_email", { required: true })}
+          />
+          {errors.user_name && <p>Email is required</p>}
+        </div>
+        <div>
+          <label>
+            <span>
+              <FontAwesomeIcon icon="fa-solid fa-message" />
+            </span>
+            Message
+          </label>
+          <textarea
+            id="message"
+            placeholder="Enter your message"
+            name="message"
+            {...register("message", { required: true })}
+          ></textarea>
+          {errors.message && <p>Please fill out this field.</p>}
+        </div>
+        <div className="col-md-6 text-center text-md-left py-2 py-md-0">
+          <input className="btn-grad" type="submit" value="Submit Now" />
+        </div>
+      </form>
+    </>
   );
 }
 

@@ -40,12 +40,23 @@
   height: 100%;
   padding: 22px 32px;
 
+  h5 {
+    font-size: 1.3rem;
+  }
+
+  p {
+    color: red;
+    margin: 0;
+  }
+
   form {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
     width: 100%;
     font-size: 1.2rem;
+    gap: 1rem;
+
 
     div {
       width: 100%;
@@ -60,7 +71,6 @@
 
       input, textarea {
         width: 90%;
-        margin-bottom: 20px;
         padding-top: 16px;
         padding-bottom: 16px;
         padding-left: 10px;

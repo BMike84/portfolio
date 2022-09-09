@@ -10,9 +10,9 @@ const Footer = () => {
   return (
     <footer id="footer">
       <div className="footer-contact">
-        {footerContacts.map((item) => {
+        {footerContacts.map((item, index) => {
           return (
-            <h2>
+            <h2 key={index}>
               <span>{item.icon}</span>
               {item.title}
             </h2>

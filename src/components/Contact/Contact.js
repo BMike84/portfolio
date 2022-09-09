@@ -16,9 +16,9 @@ const Contact = () => {
             Have a project in mind? Looking to partner or work together? Reach
             out through the form and I'll get back to you in the next 48 hours.
           </p>
-          {footerContacts.map((item) => {
+          {footerContacts.map((item, index) => {
             return (
-              <h2>
+              <h2 key={index}>
                 <span>{item.icon}</span>
                 {item.title}
               </h2>
