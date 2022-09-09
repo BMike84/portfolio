@@ -25,7 +25,7 @@ const TextAnimations = () => {
       }
 
       // Animate Shopify
-      if (count == 1) {
+      if (count === 1) {
         setCount(0);
         setIcons(shopIcon);
         setitems(shopify);
@@ -41,7 +41,7 @@ const TextAnimations = () => {
       setPlay(true);
     }, 6000);
     return () => clearTimeout(timer);
-  }, []);
+  });
 
   return (
     <Wrapper>
