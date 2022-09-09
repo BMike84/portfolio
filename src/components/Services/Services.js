@@ -48,9 +48,8 @@ const Services = () => {
             Custom Websites
           </h3>
           <p>
-            Have a current website or shopify store that needs some
-            customizations? Let me help make you make your website/store
-            standout.
+            Have a current website or store that needs some customizations? Let
+            me help make you make your website/store standout.
           </p>
         </div>
       </div>

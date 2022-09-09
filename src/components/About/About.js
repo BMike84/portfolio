@@ -36,10 +36,10 @@ const About = () => {
             I'm Michael, a professional web developer and freelancer.
             <br />
             <br />I specialize in making shopify stores. It can be rather from
-            scratch or migrating your existing store from anothe platform to
+            scratch or migrating your existing store from another platform to
             shopify.
             <br />
-            <br />I also work work with React.js, Ruby on Rails, Node.js and
+            <br />I also work with React.js, Ruby on Rails, Node.js and
             Express.js
           </h3>
           <div className="skill-images">

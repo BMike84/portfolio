@@ -3,7 +3,9 @@
 
 
 #hero {
-  margin: 0 50px 50px 50px; 
+  margin-top: 2rem;
+  margin-bottom: 10rem;
+  padding: 0 5rem;
   display: flex;
   height: auto;
 }
@@ -17,20 +19,22 @@
   
   h2 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 41px;
+    font-size: 3rem;
     margin-bottom: 14px;
   }
 
   h3 {
-    font-size: 34px;
-    margin: 0;
+    font-size: 2.7rem;
+    margin-top: 2rem;
     margin-bottom: 0;
   }
 
   h5 {
-    width: 60%;
-    font-size: 20px;
-    margin-top: 14px;
+    line-height: 2.5rem;
+    color: $lightgrey;
+    width: 70%;
+    font-size: 1.6rem;
+    margin-top: 2rem;
   }
 
 }
@@ -83,7 +87,7 @@
 
 //Image
 .hero-img {
-  margin-top:20px;
+  margin-top: 40px;
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -91,9 +95,9 @@
   align-items: center;
 
   img {
-    margin-bottom: 20px;
-    height: 350px;
-    width: 300px;
+    margin-bottom: 2rem;
+    height: 27rem;
+    width: 20rem;
     background-repeat: no-repeat;
     background-size: contain;
     box-shadow: 3px 3px .6em $shopifyGreen, -.5em 0 .6em $fullStackBlue; 

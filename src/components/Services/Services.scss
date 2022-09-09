@@ -4,13 +4,13 @@
   width: 100%;
   display: flex;
   flex-direction: column;
+  margin-bottom: 9rem;
 
   p {
     color: $lightgrey;
     font-size: 1.1rem;
   }
   
-
 }
 
 .service-header {
@@ -41,6 +41,7 @@
   flex-direction: column;
   justify-content: space-evenly;
   width: 20%;
+  height: 200px;
   padding: 10px 30px;
   background-color: #322d2d;
   border-width: 3px;
