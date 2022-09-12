@@ -7,7 +7,6 @@
   align-items: center;
   margin-bottom: 100px;
 
-
   h1 {
     text-align: center;
     color: $lightgrey;
@@ -22,15 +21,20 @@
   }
 }
 
+.react-tabs {
+  width: 100%;
+}
 
 .tabs-list {
   display: flex;
+  justify-content: center;
   width: 100%;
-  justify-content: space-evenly;
+  gap: 3em;
   padding: 0;
   margin: 0;
   list-style-type: none;
   font-size: 1.6rem;
+  margin-bottom: 20px;
 }
 
 .shopify-tab {
@@ -49,79 +53,40 @@
   }
 }
 
-.cards {
-  display: flex;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
+.all-projects {
+  width: 100%;
+  height: 300px;
 }
 
 .proj-cards {
-  text-align: center;
-  width: 30%;
-  padding: 26px 35px;
+  display: flex;
+  justify-content: center;
+}
+
+.project-cards {
+  width: 100%;
+}
+
+.inner-carousel {
+  margin: auto;
+  width: 80%;
   transition: transform .2s;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  
+
   img {
-    height: 70%;
     width: 100%;
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-
-  h3 {
-    font-size: 1.9rem;
-  }
-
-  p {
-    font-size: 1.2rem;
-  }
-
-  a {
-    font-weight: 900;
-    color: $mainRed;
-    text-decoration: none;
-  }
-  span {
-    color: $mainRed;
-    padding-left: 10px;
+    height: 300px;
   }
 
 }
 
-.proj-cards:hover {
+.inner-carousel:hover {
   transform: translate(0, -10px);
 }
 
-.card-shopify {
-  color: $shopifyGreen;
-}
-.card-full-stack {
-  color: $fullStackBlue;
-  margin: 0;
-}
-
-
-.view-all {
-  width: 30%;
-  background-image: linear-gradient(to right, #3e5b06 0%, $shopifyGreen  51%, #acdf4d 100%);
-  margin-top: 30px;
-  padding: 12px 32px;
-  text-align: center;
-  text-transform: uppercase;
-  text-decoration: none;
-  transition: 0.5s;
-  background-size: 200% auto;
-  color: #f1f1f1;            
-  box-shadow: 0 0 20px #817e7e;
-  border-radius: 20px;
-  display: block;
-}
-
-.view-all:hover {
-  background-position: right center; /* change the direction of the change here */
-  color: #fff;
-  text-decoration: none;
+.btn-div {
+  margin-top: 15px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 

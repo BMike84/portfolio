@@ -1,11 +1,11 @@
 // routes clothes
-import landing from "../images/routes-clothes/landing.png";
-import summer from "../images/routes-clothes/summer.png";
-import collection from "../images/routes-clothes/collections.png";
+import landing from "../../images/routes-clothes/landing.png";
+import summer from "../../images/routes-clothes/summer.png";
+import collection from "../../images/routes-clothes/collections.png";
 //galaxy box
-import galaxy from "../images/galaxy/box.png";
-import affiliate from "../images/galaxy/affiliate.png";
-import landingBox from "../images/galaxy/landing.png";
+import galaxy from "../../images/galaxy/box.png";
+import affiliate from "../../images/galaxy/affiliate.png";
+import landingBox from "../../images/galaxy/landing.png";
 
 const ShopifyProjects = [
   {

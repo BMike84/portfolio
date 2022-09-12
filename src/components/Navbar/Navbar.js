@@ -49,6 +49,7 @@ const Navbar = () => {
         )}
         <NavLink to="about">About Me</NavLink>
       </div>
+
       <NavLink className="btn-contact" to="contact">
         Contact Me
       </NavLink>

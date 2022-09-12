@@ -3,7 +3,7 @@ import { Routes, Route } from "react-router-dom";
 // Pages
 import Contact from "./components/Contact/Contact";
 import Navbar from "./components/Navbar/Navbar";
-import AllProjects from "./components/Projects/AllProjects";
+// import AllProjects from "./components/Projects/AllProjects";
 import About from "./components/About/About";
 import Home from "./components/Home/Home";
 import ScrollToTop from "./components/Animations/ScrolltoTop";
@@ -54,7 +54,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          {/* <Route path="projects" element={<AllProjects />} /> */}
+          {/* <Route path="allprojects" element={<AllProjects />} /> */}
           <Route path="contact" element={<Contact />} />
           <Route path="about" element={<About />} />
         </Routes>

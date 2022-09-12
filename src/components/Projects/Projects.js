@@ -1,18 +1,37 @@
 import React from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import { Element } from "react-scroll";
-
 //files
-// import WebProjects from "./WebProjects";
-import ShopifyDiv from "./ShopifyDiv";
-import WebDiv from "./WebDiv";
+import ShopifyTab from "./shopify/ShopifyTab";
+import WebTab from "./webDev/WebTab";
 
 //Scss
 import "./Projects.scss";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
+import "react-multi-carousel/lib/styles.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Projects = () => {
+  const responsive1 = {
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 2,
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 1,
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+    },
+  };
+
+  const responsive2 = {
+    all: {
+      breakpoint: { max: 3000, min: 0 },
+      items: 1,
+    },
+  };
   return (
     <Element id="projects" name="projects">
       <h1>
@@ -37,16 +56,15 @@ const Projects = () => {
             </p>
           </Tab>
         </TabList>
-        <div className="cards">
-          <TabPanel className="cards">
-            <ShopifyDiv />
+        <div className="all-projects">
+          <TabPanel className="proj-cards">
+            <ShopifyTab />
           </TabPanel>
-          <TabPanel className="cards">
-            <WebDiv />
+          <TabPanel className="proj-cards">
+            <WebTab />
           </TabPanel>
         </div>
       </Tabs>
-      {/* <button className="view-all">View All Projects</button> */}
     </Element>
   );
 };
