@@ -5,7 +5,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 15rem;
+  margin-bottom: 9rem;
 
   h1 {
     text-align: center;
@@ -92,12 +92,48 @@
 
 @media only screen and (max-width: 900px) {
   #projects {
-    margin-bottom: 15rem;
+    margin-bottom: 5rem;
+
+    h1 {
+      font-size: 2rem;
+      margin-top: 50px;
+      margin-bottom: 0;
+    }
   }
+
+  .tabs-list {
+    font-size: 1.2rem;
+   }
 
   .inner-carousel {
     img {
-      height: 300px;
+      height: 250px;
     }
   }
+}
+
+@media only screen and (max-width: 600px) {
+  #projects {
+    margin-bottom: 0;
+  }
+
+ .tabs-list {
+  font-size: 1.2rem;
+ }
+
+ .inner-carousel {
+  
+  img {
+    height: 150px;
+  }
+
+ }
+
+ .btn-div {
+
+   a {
+    width: 50%;
+   }
+ }
+
 }

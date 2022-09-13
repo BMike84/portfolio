@@ -114,14 +114,15 @@
   }
 
 }
-      
-//tablet
+
+//tablet small laptop
 @media only screen and (max-width: 900px) {
   #hero {
     flex-direction: column;
     align-content: center;
     align-items: center;
-    margin-bottom: 8rem;
+    margin-bottom: 4rem;
+    margin-top: 5px;
   }
 
   .bio {
@@ -133,11 +134,69 @@
 
     h2, h3, h5 {
       width: 100%;
+      margin: 10px 0;
+    }
+
+    h2 {
+      font-size: 2.3rem;
     }
 
     h3 {
-      font-size: 2.4rem;
+      font-size: 1.8rem;
+    }
+
+    h5 {
+      font-size: 1rem;
+      line-height: 1.2rem;
     }
    
   }
+
+  .hero-img {
+    margin-top: 30px;
+    img {
+      width: 16rem;
+      height: 200px;
+    }
+  }
+}
+
+// phones      
+@media only screen and (max-width: 600px) {
+  #hero {
+    margin: 0;
+    padding: 0 20px;
+    margin-bottom: 20px;
+
+    h2 {
+      font-size: 2rem;
+      margin: 0;
+    }
+
+    h3 {
+      font-size: 1.3rem;
+      margin: 15px;
+    }
+
+    h5 {
+      font-size: .9rem;
+      line-height: 1rem;
+      margin: 5px 0;
+    }
+  }
+
+  .hero-img {
+    margin-top: 30px;
+    img {
+      width: 16rem;
+      height: 200px;
+    }
+  }
+
+  .btn-grad {
+    font-size: .9rem;
+    width: 25%;
+    padding: 12px 28px;
+  }
+ 
 }

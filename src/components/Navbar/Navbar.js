@@ -27,7 +27,7 @@ const Navbar = () => {
             spy={true}
             smooth={true}
             duration={1000}
-            offset={-200}
+            offset={-100}
           >
             Services
           </Link>
