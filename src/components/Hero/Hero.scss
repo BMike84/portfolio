@@ -115,5 +115,29 @@
 
 }
       
+//tablet
+@media only screen and (max-width: 900px) {
+  #hero {
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    margin-bottom: 8rem;
+  }
 
- 
+  .bio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+
+    h2, h3, h5 {
+      width: 100%;
+    }
+
+    h3 {
+      font-size: 2.4rem;
+    }
+   
+  }
+}

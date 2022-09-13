@@ -19,16 +19,16 @@ const TextAnimations = () => {
     () => {
       // Animate Full Stack
       if (count === 0) {
-        setIcons(fullIcon);
-        setitems(fullStack);
+        setIcons(shopIcon);
+        setitems(shopify);
         setCount(count + 1);
       }
 
       // Animate Shopify
       if (count === 1) {
         setCount(0);
-        setIcons(shopIcon);
-        setitems(shopify);
+        setIcons(fullIcon);
+        setitems(fullStack);
       }
     },
     play ? 6000 : null

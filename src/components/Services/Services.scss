@@ -58,3 +58,19 @@
 .service-cards:hover {
   transform: translate(0, -10px);
 }
+
+@media only screen and (max-width: 900px) {
+
+  #services {
+    margin-bottom: 5rem;
+  }
+
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .service-cards {
+    width: 40%;   
+  }
+}

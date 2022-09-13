@@ -47,3 +47,19 @@
     padding-right: 10px;
   }
 } 
+
+@media only screen and (max-width: 900px) {
+  #footer {
+    flex-direction: column;
+  }
+
+  .footer-contact {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer-links {
+    width: 100%;
+    justify-content: center;
+  }
+}
