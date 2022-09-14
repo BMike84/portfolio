@@ -30,7 +30,9 @@ const About = () => {
   return (
     <section id="about">
       <div className="about-me">
-        <img src={laptop} />
+        <div className="about-img">
+          <img className="hero-image" src={laptop} />
+        </div>
         <div className="text-skills">
           <h3>
             I'm Michael, a professional web developer and freelancer.

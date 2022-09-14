@@ -12,8 +12,10 @@
   color: $lightgrey;
   width: 100%;
   
-  img {
-    width: 20rem;
+
+  .hero-image {
+    width: 30rem;
+    box-shadow: 7px 7px .9em $shopifyGreen, -.9em -7px .9em $fullStackBlue; 
   }
 }
 
@@ -35,14 +37,25 @@
   padding: 30px;
   width: 50%;
 
-
-
   img {
     width: 99%;
     height: 90px;
   }
 
-  // button {
-  //   display: none;
-  // }
+}
+
+// ladnscape tablets to laptops
+@media only screen and (max-width: 992px) {
+
+}
+
+
+// large phones tablets
+@media only screen and (max-width: 768px) {
+
+}
+
+//phones
+@media only screen and (max-width: 600px) {
+
 }

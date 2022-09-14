@@ -122,9 +122,6 @@
 
 // ladnscape tablets to laptops
 @media only screen and (max-width: 992px) {
-  #projects {
-
-  }
 
   .shopify-btn, .full-btn {
     font-size: .75rem;
@@ -156,6 +153,7 @@
   }
 }
 
+//phones
 @media only screen and (max-width: 600px) {
   #projects {
     margin-bottom: 0;
