@@ -5,7 +5,7 @@
 #hero {
   margin-top: 2rem;
   margin-bottom: 10rem;
-  padding: 0 5rem;
+  padding: 1.8rem 10rem;
   display: flex;
   height: auto;
 }
@@ -96,11 +96,11 @@
 
   img {
     margin-bottom: 2rem;
-    height: 27rem;
-    width: 20rem;
+    height: 30rem;
+    width: 30rem;
     background-repeat: no-repeat;
     background-size: contain;
-    box-shadow: 3px 3px .6em $shopifyGreen, -.5em 0 .6em $fullStackBlue; 
+    box-shadow: 7px 7px .9em $shopifyGreen, -.9em -7px .9em $fullStackBlue; 
   }
 
   .social-icons {
@@ -115,8 +115,52 @@
 
 }
 
+// ladnscape tablets to laptops
+@media only screen and (max-width: 1200px) {
+  #hero {
+    margin-top: 30px;
+      padding: 20px 20px;
+
+    .bio {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      width: 55%;
+
+      h2, h3, h5 {
+        width: 100%;
+        margin: 20px 0;
+      }
+
+      h2 {
+        font-size: 2.5rem;
+      }
+
+      h3 {
+        font-size: 1.6rem;
+      }
+
+      h5 {
+        font-size: 1.3rem;
+        line-height: 2rem;
+      }
+    
+    }
+
+    .hero-img {
+      margin-top: 30px;
+
+      img {
+        width: 17rem;
+        height: 350px;
+      }
+    }
+  }
+}
+
 //tablet small laptop
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 768px) {
   #hero {
     flex-direction: column;
     align-content: center;
@@ -155,8 +199,8 @@
   .hero-img {
     margin-top: 30px;
     img {
-      width: 18rem;
-      height: 200px;
+      width: 20rem;
+      height: 280px;
     }
   }
 
@@ -186,16 +230,22 @@
 
     h5 {
       font-size: .9rem;
-      line-height: 1rem;
+      line-height: 1.3rem;
       margin: 5px 0;
+    }
+
+    .btn-grad {
+      margin-top: 30px;
+      font-size: .7rem;
     }
   }
 
   .hero-img {
     margin-top: 30px;
+
     img {
-      width: 16rem;
-      height: 200px;
+      width: 18rem;
+      height: 250px;
     }
   }
  

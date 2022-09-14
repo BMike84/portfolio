@@ -41,7 +41,7 @@
   flex-direction: column;
   justify-content: space-evenly;
   width: 20%;
-  height: 200px;
+  height: 400px;
   padding: 10px 30px;
   background-color: #322d2d;
   border-width: 3px;
@@ -59,10 +59,43 @@
   transform: translate(0, -10px);
 }
 
-@media only screen and (max-width: 900px) {
+// ladnscape tablets to laptops
+@media only screen and (max-width: 992px) {
+  #services {
+    padding: 25px 0;
+
+    p {
+      font-size: 1rem;
+    }
+  }
+
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .service-cards {
+    height: 300px;
+    width: 25%;   
+    padding: 0 15px;
+
+    h3 {
+      font-size: 1.1rem;
+      margin: 0;
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+}
+
+// tablets large phones
+@media only screen and (max-width: 768px) {
 
   #services {
     margin-bottom: 1rem;
+    padding: 50px 0;
 
     h1 {
       font-size: 2rem;
@@ -98,6 +131,7 @@
 
   #services {
     margin: 0;
+    margin-bottom: 100px;
   }
 
   .cards {
