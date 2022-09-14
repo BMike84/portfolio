@@ -1,7 +1,11 @@
 import React from "react";
 import { Element } from "react-scroll";
+
+//files
+import ServiceData from "./ServiceData";
+
+//Scss
 import "./Services.scss";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Services = () => {
   return (
@@ -15,43 +19,17 @@ const Services = () => {
         </p>
       </div>
       <div className="cards">
-        <div className="service-cards shopify">
-          <h3>
-            <span>
-              <FontAwesomeIcon icon="fa-brands fa-shopify" />
-            </span>
-            Shopify store setup
-          </h3>
-          <p>
-            A Shopify store is a great way to expand your business. Let's work
-            together to build your store and expand your customer reach.
-          </p>
-        </div>
-        <div className="service-cards shopify">
-          <h3>
-            <span>
-              <FontAwesomeIcon icon="fa-brands fa-shopify" />
-            </span>
-            Migrations
-          </h3>
-          <p>
-            Have a store already and looking to switch to Shopify? I can help
-            with your migration of data, content, and training if you're new to
-            Shopify.
-          </p>
-        </div>
-        <div className="service-cards full-stack">
-          <h3>
-            <span>
-              <FontAwesomeIcon icon="fa-brands fa-pagelines" />
-            </span>
-            Custom Websites
-          </h3>
-          <p>
-            Have a current website or store that needs some customizations? Let
-            me help make you make your website/store standout.
-          </p>
-        </div>
+        {ServiceData.map((item, index) => {
+          return (
+            <div className={item.class} key={index}>
+              <h3>
+                <span>{item.icon}</span>
+                {item.title}
+              </h3>
+              <p>{item.description}</p>
+            </div>
+          );
+        })}
       </div>
     </Element>
   );

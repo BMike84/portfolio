@@ -54,8 +54,8 @@ const ShopifyTab = () => {
                 <img alt={store.title} src={store.image3} />
               </Carousel>
               <div className="btn-div">
-                <a href={store.link} className="btn-grad" target="blank">
-                  View Project
+                <a href={store.link} className="shopify-btn" target="blank">
+                  {store.title}
                 </a>
               </div>
             </>

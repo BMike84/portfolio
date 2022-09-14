@@ -15,7 +15,10 @@
   
   h1 {
     font-size: 3rem;
-    color: white;
+    background-image: linear-gradient(to right, $mainRed 0%, #b31217  51%, #e52d27  100%);
+    background-clip: text;
+    color: transparent;
+    // color: white;
     line-height: 5rem;
     font-family: 'Montserrat', sans-serif;
     margin-bottom: 10px;

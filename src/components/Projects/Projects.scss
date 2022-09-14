@@ -88,6 +88,35 @@
   width: 100%;
   display: flex;
   justify-content: center;
+
+  .shopify-btn, .full-btn {
+    width: 30%;
+    margin-top: 10px;
+    padding: 12px 32px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: #f1f1f1;            
+    box-shadow: 0 0 20px #817e7e;
+    border-radius: 20px;
+    display: block;
+  }
+
+  .shopify-btn {
+    background-image: linear-gradient(to right, #4e720c 0%, $shopifyGreen  51%, #b8ec58  100%);
+  }
+
+  .full-btn {
+    background-image: linear-gradient(to right, #134e86 0%, $fullStackBlue  51%, #3fadf1  100%);
+  }
+
+  .shopify-btn:hover, .full-btn:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
 }
 
 @media only screen and (max-width: 900px) {

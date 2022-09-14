@@ -54,8 +54,8 @@ const WebTab = () => {
                 <img alt={store.title} src={store.image3} />
               </Carousel>
               <div className="btn-div">
-                <a href={store.link} className="btn-grad shop-a" target="blank">
-                  View Project
+                <a href={store.link} className="full-btn" target="blank">
+                  {store.title}
                 </a>
               </div>
             </>
