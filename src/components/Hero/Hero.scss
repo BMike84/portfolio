@@ -3,7 +3,7 @@
 
 
 #hero {
-  margin-top: 2rem;
+  margin-top: 1rem;
   margin-bottom: 10rem;
   padding: 1.8rem 10rem;
   display: flex;
@@ -19,22 +19,23 @@
   
   h2 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 3rem;
+    font-size: 2.7rem;
     margin-bottom: 14px;
   }
 
   h3 {
-    font-size: 2.7rem;
+    font-size: 2.2rem;
     margin-top: 2rem;
     margin-bottom: 0;
   }
 
   h5 {
-    line-height: 2.5rem;
+    line-height: 2rem;
     color: $lightgrey;
     width: 70%;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     margin-top: 2rem;
+    font-weight: 300;
   }
 
 }
@@ -96,8 +97,8 @@
 
   img {
     margin-bottom: 2rem;
-    height: 30rem;
-    width: 30rem;
+    height: 27rem;
+    width: 27rem;
     background-repeat: no-repeat;
     background-size: contain;
     box-shadow: 7px 7px .9em $shopifyGreen, -.9em -7px .9em $fullStackBlue; 
@@ -206,7 +207,7 @@
 
   .btn-grad {
     font-size: .9rem;
-    width: 25%;
+    width: 75%;
     padding: 12px 28px;
   }
 }
