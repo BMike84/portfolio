@@ -3,7 +3,9 @@
 html, body {
   margin: 0;
   font-family: 'Satoshi variable', sans-serif;
-  background-color: $mainBackground;
+  background-image: url("./components/images/background.jpeg");
+  background-size: cover;
+  background-attachment: fixed;
   height: 100%;
   width: 100%;
   display: flex;
