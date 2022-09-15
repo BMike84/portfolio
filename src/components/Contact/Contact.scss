@@ -3,7 +3,7 @@
 
 
 #contact {
-  width: 80%;
+  width: 90%;
   margin: 50px auto;
   display: flex;
   justify-content: space-between;
@@ -14,20 +14,28 @@
   color: $lightgrey;
   
   h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     background-image: linear-gradient(to right, $mainRed 0%, #b31217  51%, #e52d27  100%);
     background-clip: text;
     color: transparent;
-    // color: white;
-    line-height: 5rem;
+    line-height: 4rem;
     font-family: 'Montserrat', sans-serif;
     margin-bottom: 10px;
     margin-top: 0;
   }
 
+  h2 {
+    font-size: 1.8rem;
+    color: #c5b9b9;
+  }
+
   p {
     font-size: 1.2rem;
-    line-height: 2rem;
+    line-height: 2.5rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
   }
 
   span {
@@ -96,10 +104,52 @@
 
 
 // ladnscape tablets to laptops
-@media only screen and (max-width: 992px) {}
+@media only screen and (max-width: 992px) {
+  .contact-info {
+    width: 45%;
+
+    h1 {
+      font-size: 1.9rem;
+      line-height: 2.9rem;
+    }
+
+    h2 {
+      margin: 0;
+      font-size: 1.7rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 50px;
+    }
+
+    h3 {
+      font-size: 1.1rem;
+    }
+  }
+
+  .contact-form {
+    width: 45%;
+  }
+}
 
 //large phones tablets
-@media only screen and (max-width: 768px) {}
+@media only screen and (max-width: 768px) {
+  #contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-info {
+    width: 80%;
+    text-align: center;
+  }
+
+  .contact-form {
+    width: 80%;
+  }
+}
 
 //phones
 @media only screen and (max-width: 600px) {}

@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { SiUpwork } from "react-icons/si";
 //Files
 import TextAnimations from "../Animations/TextAnimations";
 //Scss Font Awesome
@@ -7,6 +8,7 @@ import "./Hero.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 //Hero Image
 import laptop from "../images/laptop.jpg";
+import upwork from "../images/upwork.png";
 
 const Hero = () => {
   return (
@@ -36,6 +38,12 @@ const Hero = () => {
             target="blank"
           >
             <FontAwesomeIcon icon="fa-brands fa-linkedin" />
+          </a>
+          <a
+            href="https://www.upwork.com/freelancers/~017b7de11424dccba0"
+            target="blank"
+          >
+            <SiUpwork />
           </a>
         </div>
       </div>

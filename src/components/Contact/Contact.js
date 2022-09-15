@@ -12,16 +12,18 @@ const Contact = () => {
       <div id="contact">
         <div className="contact-info">
           <h1>Have a project in mind?</h1>
+          <h2>Let's work together!</h2>
           <p>
-            Have a project in mind? Looking to partner or work together? Reach
-            out through the form and I'll get back to you in the next 48 hours.
+            Got a project in mind? Wether it's a shopify store or a custom
+            website. Contact me and let's get started working on making you're
+            dream site.
           </p>
           {footerContacts.map((item, index) => {
             return (
-              <h2 key={index}>
+              <h3 key={index}>
                 <span>{item.icon}</span>
                 {item.title}
-              </h2>
+              </h3>
             );
           })}
         </div>

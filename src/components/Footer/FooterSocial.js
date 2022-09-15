@@ -1,4 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { SiUpwork } from "react-icons/si";
 
 const FooterSocial = () => {
   return (
@@ -17,6 +18,15 @@ const FooterSocial = () => {
           <FontAwesomeIcon icon="fa-brands fa-linkedin" />
         </span>
         Linkedin
+      </a>
+      <a
+        href="https://www.upwork.com/freelancers/~017b7de11424dccba0"
+        target="blank"
+      >
+        <span>
+          <SiUpwork />
+        </span>
+        Upwork
       </a>
     </>
   );
