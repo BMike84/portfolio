@@ -11,30 +11,39 @@ import postgres from "../images/skills/postgres.png";
 const Skills = [
   {
     image: react,
+    title: "react",
   },
   {
     image: ruby,
+    title: "ruby",
   },
   {
     image: html,
+    title: "html",
   },
   {
     image: css,
+    title: "css",
   },
   {
     image: javascript,
+    title: "javascript",
   },
   {
     image: node,
+    title: "node",
   },
   {
     image: postgres,
+    title: "postgres",
   },
   {
     image: bootstrap,
+    title: "bootstrap",
   },
   {
     image: shopify,
+    title: "shopify",
   },
 ];
 

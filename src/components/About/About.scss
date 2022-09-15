@@ -1,58 +1,128 @@
 @import "../variables";
 
 #about {
+  width: 100%;
   display: flex;
   flex-direction: column;
 }
 
 .about-me {
-  padding: 50px 82px;
   display: flex;
   justify-content: space-between;
   color: $lightgrey;
-  width: 100%;
-  
+  width: 90%;
+  margin: auto;
+  padding: 20px 0;
+  margin-bottom: 50px;
+}
 
-  .hero-image {
-    width: 30rem;
+.about-img {
+  width: 45%;
+
+  img {
+    width: 90%;
+    height: 100%;
     box-shadow: 7px 7px .9em $shopifyGreen, -.9em -7px .9em $fullStackBlue; 
   }
 }
 
 .text-skills {
-  width: 70%;
+  width: 55%;
   display: flex;
-  align-items: center;
   flex-direction: column;
-  
+}
 
-   h3 {
+.about-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h3 {
+    width: 70%;
     font-size: 1.3rem;
-    width: 60%;
-    line-height: 1.8rem;
-   }
+    line-height: 2rem;
+  }
 }
 
 .skill-images {
-  padding: 30px;
-  width: 50%;
+  margin: auto;
+  width: 80%;
 
   img {
-    width: 99%;
-    height: 90px;
+    width: 101%;
+    height: 150px;
   }
-
 }
+
 
 // ladnscape tablets to laptops
 @media only screen and (max-width: 992px) {
 
+  #about {
+    margin-top: 20px;
+  }
+
+  .about-me {
+    margin-bottom: 50px;
+  }
+
+  .about-img {
+    img {
+      width: 90%;
+    }
+  }
+
+  .about-info {
+    h3 {
+      width: 90%;
+      font-size: 1rem;
+    }
+  }
+
+  .skill-images {
+    width: 90%;
+
+    img {
+      height: 100px;
+    }
+  }
 }
 
 
 // large phones tablets
 @media only screen and (max-width: 768px) {
+  .about-me {
+    flex-direction: column;
+    align-items: center;
+  }
 
+  .about-img {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+
+    img {
+      height: 300px;
+      width: 70%;
+    }
+  }
+  .text-skills {
+    margin-top: 15px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .about-info {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+
+    h3 {
+      margin: 5px 0;
+    }
+  }
 }
 
 //phones
