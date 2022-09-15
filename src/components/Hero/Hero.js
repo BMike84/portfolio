@@ -8,7 +8,6 @@ import "./Hero.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 //Hero Image
 import laptop from "../images/laptop.jpg";
-import upwork from "../images/upwork.png";
 
 const Hero = () => {
   return (
@@ -28,7 +27,7 @@ const Hero = () => {
         </NavLink>
       </div>
       <div className="hero-img">
-        <img src={laptop} />
+        <img src={laptop} alt="laptop" />
         <div className="social-icons">
           <a href="https://github.com/BMike84" target="blank">
             <FontAwesomeIcon icon="fa-brands fa-github" />

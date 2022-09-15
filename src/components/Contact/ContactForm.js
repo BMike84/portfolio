@@ -1,12 +1,10 @@
-import React, { useRef, useState } from "react";
+import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { useForm } from "react-hook-form";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function ContactForm() {
-  const [success, setSuccess] = useState(false);
-
   const {
     register,
     handleSubmit,
@@ -85,7 +83,6 @@ function ContactForm() {
           ></textarea>
           {errors.message && <p>Please fill out this field.</p>}
         </div>
-        {success && <p>Message sent</p>}
         <div className="col-md-6 text-center text-md-left py-2 py-md-0">
           <input className="btn-grad" type="submit" value="Submit Now" />
         </div>

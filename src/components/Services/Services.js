@@ -21,11 +21,9 @@ const Services = () => {
       <div className="cards">
         {ServiceData.map((item, index) => {
           return (
-            <div className={item.class} key={index}>
-              <h3>
-                <span>{item.icon}</span>
-                {item.title}
-              </h3>
+            <div className="card" key={index}>
+              <img src={item.img} alt={item.title} />
+              <h4>{item.title}</h4>
               <p>{item.description}</p>
             </div>
           );

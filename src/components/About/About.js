@@ -35,7 +35,18 @@ const About = () => {
         </div>
         <div className="text-skills">
           <div className="about-info">
-            <h3>I'm Michael, a professional web developer and freelancer.</h3>
+            <h3>
+              I'm Michael, a full-stack web developer and freelancer. You can
+              also find me on
+              <a
+                href="https://www.upwork.com/freelancers/~017b7de11424dccba0"
+                target="blank"
+                className="upwork"
+              >
+                Upwork
+              </a>
+              .
+            </h3>
             <h3>
               I specialize in making shopify stores. It can be rather from
               scratch or migrating your existing store from another platform to
@@ -44,6 +55,7 @@ const About = () => {
 
             <h3>
               I also work with React.js, Ruby on Rails, Node.js and Express.js
+              and more.
             </h3>
           </div>
           <div className="skill-images">
