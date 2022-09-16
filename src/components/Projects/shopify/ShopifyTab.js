@@ -57,6 +57,7 @@ const ShopifyTab = () => {
                 <a href={store.link} className="shopify-btn" target="blank">
                   {store.title}
                 </a>
+                <p>{store.password}</p>
               </div>
             </>
           );

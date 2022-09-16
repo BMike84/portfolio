@@ -15,6 +15,7 @@ const ShopifyProjects = [
     link: "https://qinae45dxg5y3k0o-61681828005.shopifypreview.com",
     description: "Clothing Store built on shopify",
     title: "Routes Clothes",
+    password: "Ask for store password",
   },
 
   {
@@ -24,6 +25,7 @@ const ShopifyProjects = [
     link: "https://galaxy-box-11.myshopify.com/?preview_theme_id=135008420087",
     description: "Galaxy Box Product",
     title: "Galaxy Box",
+    password: "Ask for store password",
   },
 ];
 
