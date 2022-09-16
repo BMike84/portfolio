@@ -16,7 +16,6 @@ const Services = () => {
   const animation = useAnimation();
 
   useEffect(() => {
-    console.log("useEffect hook in view= ", inView);
     if (inView) {
       animation.start({
         x: 0,
@@ -32,7 +31,7 @@ const Services = () => {
         x: "-100vw",
       });
     }
-  }, [inView]);
+  }, [inView, animation]);
 
   return (
     <Element id="services" name="services">

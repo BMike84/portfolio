@@ -18,7 +18,6 @@ const Projects = () => {
   const animation = useAnimation();
 
   useEffect(() => {
-    console.log("Project hook in view= ", inView);
     if (inView) {
       animation.start({
         x: 0,
@@ -34,7 +33,7 @@ const Projects = () => {
         x: "-100vw",
       });
     }
-  }, [inView]);
+  }, [inView, animation]);
 
   return (
     <motion.div id="projects" name="projects" ref={ref} animate={animation}>

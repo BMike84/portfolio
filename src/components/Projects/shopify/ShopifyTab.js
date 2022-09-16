@@ -31,7 +31,7 @@ const ShopifyTab = () => {
       <Carousel responsive={responsive1} className="project-cards">
         {ShopifyProjects.map((store, index) => {
           return (
-            <>
+            <div className="inner-carousel" key={index}>
               <Carousel
                 key={index}
                 swipeable={false}
@@ -59,7 +59,7 @@ const ShopifyTab = () => {
                 </a>
                 <p>{store.password}</p>
               </div>
-            </>
+            </div>
           );
         })}
       </Carousel>

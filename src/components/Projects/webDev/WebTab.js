@@ -31,7 +31,7 @@ const WebTab = () => {
       <Carousel responsive={responsive1} className="project-cards">
         {WebProjects.map((store, index) => {
           return (
-            <>
+            <div className="inner-carousel" key={index}>
               <Carousel
                 key={index}
                 swipeable={false}
@@ -58,7 +58,7 @@ const WebTab = () => {
                   {store.title}
                 </a>
               </div>
-            </>
+            </div>
           );
         })}
       </Carousel>
