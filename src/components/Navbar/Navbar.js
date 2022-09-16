@@ -11,7 +11,7 @@ const Navbar = () => {
   useNavigate();
 
   // adds nav button on smller screen
-  const [showLinks, setShowLinks] = useState(true);
+  const [showLinks, setShowLinks] = useState(false);
 
   // makes navbar color on scroll
   const [navColor, setNavColor] = useState(false);
