@@ -6,6 +6,7 @@ import ContactForm from "./ContactForm.js";
 import Footer from "../Footer/Footer";
 //Scss
 import "./Contact.scss";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Contact = () => {
   return (
@@ -25,14 +26,12 @@ const Contact = () => {
               website. Contact me and let's get started working on making you're
               dream site.
             </p>
-            {footerContacts.map((item, index) => {
-              return (
-                <h3 key={index}>
-                  <span>{item.icon}</span>
-                  {item.title}
-                </h3>
-              );
-            })}
+            <h3>
+              <span>
+                <FontAwesomeIcon icon="fa-solid fa-envelope" />
+              </span>
+              michael@michaelbuffone.net
+            </h3>
           </div>
           <div className="contact-form">
             <ContactForm />

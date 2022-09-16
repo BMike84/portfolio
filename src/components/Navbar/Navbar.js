@@ -39,7 +39,7 @@ const Navbar = () => {
         </div>
         <div className="links links-media" id={showLinks ? "hidden" : ""}>
           <NavLink to="/">Home</NavLink>
-          {window.location.href === "http://localhost:3000/" ? (
+          {window.location.href === "https://michaelbuffone.net/" ? (
             <Link
               to="services"
               spy={true}
@@ -52,7 +52,7 @@ const Navbar = () => {
           ) : (
             <NavLink to="/">Services</NavLink>
           )}
-          {window.location.href === "http://localhost:3000/" ? (
+          {window.location.href === "https://michaelbuffone.net/" ? (
             <Link
               to="projects"
               spy={true}

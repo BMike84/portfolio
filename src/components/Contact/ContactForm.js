@@ -87,7 +87,12 @@ function ContactForm() {
           {errors.message && <p>Please fill out this field.</p>}
         </div>
         <div className="col-md-6 text-center text-md-left py-2 py-md-0">
-          <input className="btn-grad" type="submit" value="Submit Now" />
+          <input
+            id="contact-btn"
+            className="btn-grad"
+            type="submit"
+            value="Submit Now"
+          />
         </div>
         <p className="email-success">{statusMessage}</p>
       </form>

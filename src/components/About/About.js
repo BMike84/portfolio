@@ -79,8 +79,8 @@ const About = () => {
                 containerClass="carousel-container"
                 removeArrowOnDeviceType={["tablet", "mobile"]}
               >
-                {Skills.map((item) => {
-                  return <img src={item.image} alt={item.title} />;
+                {Skills.map((item, index) => {
+                  return <img key={index} src={item.image} alt={item.title} />;
                 })}
               </Carousel>
             </div>
