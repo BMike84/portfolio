@@ -1,10 +1,12 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { useForm } from "react-hook-form";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function ContactForm() {
+  const [statusMessage, setStatusMessage] = useState("");
+
   const {
     register,
     handleSubmit,
@@ -14,7 +16,7 @@ function ContactForm() {
 
   const form = useRef();
 
-  const sendEmail = (e) => {
+  const sendEmail = (e, data) => {
     // e.preventDefault();
 
     emailjs
@@ -27,6 +29,7 @@ function ContactForm() {
       .then(
         (result) => {
           console.log(result.text);
+          setStatusMessage("Email sent successfully");
         },
         (error) => {
           console.log(error.text);
@@ -86,6 +89,7 @@ function ContactForm() {
         <div className="col-md-6 text-center text-md-left py-2 py-md-0">
           <input className="btn-grad" type="submit" value="Submit Now" />
         </div>
+        <p className="email-success">{statusMessage}</p>
       </form>
     </>
   );
