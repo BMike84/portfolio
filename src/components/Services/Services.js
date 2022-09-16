@@ -1,5 +1,7 @@
-import React from "react";
+import { useEffect } from "react";
 import { Element } from "react-scroll";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 //files
 import ServiceData from "./ServiceData";
@@ -8,17 +10,41 @@ import ServiceData from "./ServiceData";
 import "./Services.scss";
 
 const Services = () => {
+  //to see if section is in view
+  const { ref, inView } = useInView();
+
+  const animation = useAnimation();
+
+  useEffect(() => {
+    console.log("useEffect hook in view= ", inView);
+    if (inView) {
+      animation.start({
+        x: 0,
+        transition: {
+          type: "spring",
+          duration: 5,
+          bounce: 0.3,
+        },
+      });
+    }
+    if (!inView) {
+      animation.start({
+        x: "-100vw",
+      });
+    }
+  }, [inView]);
+
   return (
     <Element id="services" name="services">
-      <div className="service-header">
+      <motion.div ref={ref} className="service-header" animate={animation}>
         <h1>
           Check out my <span>services</span>
         </h1>
         <p>
           All services come with 100% money back gurantee if your not satisfied
         </p>
-      </div>
-      <div className="cards">
+      </motion.div>
+      <motion.div ref={ref} className="cards" animate={animation}>
         {ServiceData.map((item, index) => {
           return (
             <div className="card" key={index}>
@@ -28,7 +54,7 @@ const Services = () => {
             </div>
           );
         })}
-      </div>
+      </motion.div>
     </Element>
   );
 };

@@ -1,6 +1,7 @@
-import React from "react";
+import { useEffect } from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
-import { Element } from "react-scroll";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 //files
 import ShopifyTab from "./shopify/ShopifyTab";
 import WebTab from "./webDev/WebTab";
@@ -11,8 +12,32 @@ import "react-multi-carousel/lib/styles.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Projects = () => {
+  //to see if section is in view
+  const { ref, inView } = useInView();
+
+  const animation = useAnimation();
+
+  useEffect(() => {
+    console.log("Project hook in view= ", inView);
+    if (inView) {
+      animation.start({
+        x: 0,
+        transition: {
+          type: "spring",
+          duration: 5,
+          bounce: 0.3,
+        },
+      });
+    }
+    if (!inView) {
+      animation.start({
+        x: "-100vw",
+      });
+    }
+  }, [inView]);
+
   return (
-    <Element id="projects" name="projects">
+    <motion.div id="projects" name="projects" ref={ref} animate={animation}>
       <h1>
         Some of my <span>projects</span>
       </h1>
@@ -44,7 +69,7 @@ const Projects = () => {
           </TabPanel>
         </div>
       </Tabs>
-    </Element>
+    </motion.div>
   );
 };
 

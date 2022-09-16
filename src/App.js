@@ -1,12 +1,15 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
+import { motion } from "framer-motion";
+
 // Pages
-import Contact from "./components/Contact/Contact";
+import AnimatedRoutes from "./components/Animations/AnimatedRoutes";
 import Navbar from "./components/Navbar/Navbar";
-// import AllProjects from "./components/Projects/AllProjects";
-import About from "./components/About/About";
-import Home from "./components/Home/Home";
 import ScrollToTop from "./components/Animations/ScrolltoTop";
+// import Contact from "./components/Contact/Contact";
+// import AllProjects from "./components/Projects/AllProjects";
+// import About from "./components/About/About";
+// import Home from "./components/Home/Home";
 
 // Scss
 import "./App.scss";
@@ -52,12 +55,7 @@ function App() {
     <main>
       <ScrollToTop>
         <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          {/* <Route path="allprojects" element={<AllProjects />} /> */}
-          <Route path="contact" element={<Contact />} />
-          <Route path="about" element={<About />} />
-        </Routes>
+        <AnimatedRoutes />
       </ScrollToTop>
     </main>
   );
