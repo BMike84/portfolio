@@ -23,7 +23,7 @@ const Services = () => {
           return (
             <div className="card" key={index}>
               <img src={item.img} alt={item.title} />
-              <h4>{item.title}</h4>
+              <h4 className="service-hover">{item.title}</h4>
               <p>{item.description}</p>
             </div>
           );

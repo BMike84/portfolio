@@ -15,10 +15,8 @@
   background-image: linear-gradient(to right, $mainRed 0%, #b31217  51%, #e52d27  100%);
   background-clip: text;
   color: transparent;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   
   h2 {
-    font-family: 'Montserrat', sans-serif;
     font-size: 2.7rem;
     margin-bottom: 14px;
   }
@@ -35,7 +33,7 @@
     width: 70%;
     font-size: 1.4rem;
     margin-top: 2rem;
-    font-weight: 300;
+    font-weight: 100;
   }
 
 }
@@ -97,8 +95,8 @@
 
   img {
     margin-bottom: 2rem;
-    height: 27rem;
-    width: 27rem;
+    height: 25rem;
+    width: 22rem;
     background-repeat: no-repeat;
     background-size: contain;
     box-shadow: 7px 7px .9em $shopifyGreen, -.9em -7px .9em $fullStackBlue; 

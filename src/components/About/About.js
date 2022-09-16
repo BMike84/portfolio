@@ -10,7 +10,7 @@ import "./About.scss";
 import "react-multi-carousel/lib/styles.css";
 
 //Hero Image
-import laptop from "../images/laptop.jpg";
+import hero from "../images/hero.jpeg";
 
 const About = () => {
   const responsive = {
@@ -31,7 +31,7 @@ const About = () => {
     <section id="about">
       <div className="about-me">
         <div className="about-img">
-          <img className="hero-image" src={laptop} alt="my-picutre" />
+          <img className="hero-image" src={hero} alt="my-picutre" />
         </div>
         <div className="text-skills">
           <div className="about-info">
@@ -52,7 +52,6 @@ const About = () => {
               scratch or migrating your existing store from another platform to
               shopify.
             </h3>
-
             <h3>
               I also work with React.js, Ruby on Rails, Node.js and Express.js
               and more.

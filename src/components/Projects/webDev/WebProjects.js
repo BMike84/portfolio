@@ -25,14 +25,6 @@ const WebProjects = [
     description: "Password Keeper",
     title: "The Vault",
   },
-  {
-    image: home,
-    image2: edit,
-    image3: generate,
-    link: "https://github.com/BMike84/cut-the-line",
-    description: "Password Keeper",
-    title: "The Vault",
-  },
 ];
 
 export default WebProjects;
