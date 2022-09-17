@@ -33,10 +33,10 @@ const Projects = () => {
         x: "-100vw",
       });
     }
-  }, [inView, animation]);
+  }, [inView]);
 
   return (
-    <motion.div id="projects" name="projects" ref={ref} animate={animation}>
+    <div id="projects" name="projects" ref={ref}>
       <h1>
         Some of my <span>projects</span>
       </h1>
@@ -59,16 +59,16 @@ const Projects = () => {
             </p>
           </Tab>
         </TabList>
-        <div className="all-projects">
+        <motion.div className="all-projects" animate={animation}>
           <TabPanel className="proj-cards">
             <ShopifyTab />
           </TabPanel>
           <TabPanel className="proj-cards">
             <WebTab />
           </TabPanel>
-        </div>
+        </motion.div>
       </Tabs>
-    </motion.div>
+    </div>
   );
 };
 
