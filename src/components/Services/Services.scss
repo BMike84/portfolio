@@ -92,6 +92,22 @@
 }
 // tablets large phones
 @media only screen and (max-width: 768px) {
+  #services {
+    padding-top: 0;
+    align-items: center;
+
+    p {
+      font-size: 1rem;
+    }
+  }
+
+  .service-header {
+   
+    h1 {
+      font-size: 2rem;
+    }
+   
+  }
 
   .cards {
     width: 100%;
@@ -110,8 +126,24 @@
 @media only screen and (max-width: 600px) {
 
   #services {
+    padding-bottom: 0;
     margin: 0;
     margin-bottom: 100px;
+    align-items: center;
+
+    p {
+      font-size: 13px;
+    }
+  }
+
+  .service-header {
+    padding: 0 10px;
+    h1 {
+      font-size: 1.7rem;
+    }
+    p {
+      padding: 0 20px;
+    }
   }
 
   .cards {

@@ -31,18 +31,18 @@ const Services = () => {
         x: "-100vw",
       });
     }
-  }, [inView, animation]);
+  }, [inView]);
 
   return (
-    <Element id="services" name="services">
-      <motion.div ref={ref} className="service-header" animate={animation}>
+    <div id="services" name="services" ref={ref}>
+      <div className="service-header">
         <h1>
           Check out my <span>services</span>
         </h1>
         <p>
           All services come with 100% money back gurantee if your not satisfied
         </p>
-      </motion.div>
+      </div>
       <motion.div ref={ref} className="cards" animate={animation}>
         {ServiceData.map((item, index) => {
           return (
@@ -54,7 +54,7 @@ const Services = () => {
           );
         })}
       </motion.div>
-    </Element>
+    </div>
   );
 };
 
