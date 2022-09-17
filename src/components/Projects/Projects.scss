@@ -24,6 +24,10 @@
 
 .react-tabs {
   width: 100%;
+
+  li {
+    cursor: pointer;
+  }
 }
 
 .tabs-list {
