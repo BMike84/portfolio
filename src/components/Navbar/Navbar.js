@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import { Link } from "react-scroll";
-import { FaBars, FaTimes } from "react-icons/fa";
+import { FaBars } from "react-icons/fa";
 
 //Scss Font Awesome
 import "./Navbar.scss";
@@ -15,6 +15,10 @@ const Navbar = () => {
 
   // makes navbar color on scroll
   const [navColor, setNavColor] = useState(false);
+
+  const scroll = () => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  };
 
   const changeColor = () => {
     if (window.scrollY >= 65) {
@@ -30,7 +34,14 @@ const Navbar = () => {
     <>
       <nav id="nav" className={navColor ? "nav-bg" : ""}>
         <div className="logo">
-          <NavLink to="/" duration={1000}>
+          <NavLink
+            to="/"
+            duration={1000}
+            onClick={() => {
+              setShowLinks(false);
+              scroll();
+            }}
+          >
             <span>
               <FontAwesomeIcon icon="fa-solid fa-code" />
             </span>
@@ -38,7 +49,15 @@ const Navbar = () => {
           </NavLink>
         </div>
         <div className="links links-media" id={showLinks ? "hidden" : ""}>
-          <NavLink to="/">Home</NavLink>
+          <NavLink
+            to="/"
+            onClick={() => {
+              setShowLinks(!showLinks);
+              scroll();
+            }}
+          >
+            Home
+          </NavLink>
           {window.location.href === "https://michaelbuffone.net/" ? (
             <Link
               to="services"
@@ -46,11 +65,14 @@ const Navbar = () => {
               smooth={true}
               duration={1000}
               offset={-120}
+              onClick={() => setShowLinks(!showLinks)}
             >
               Services
             </Link>
           ) : (
-            <NavLink to="/">Services</NavLink>
+            <NavLink to="/" onClick={() => setShowLinks(!showLinks)}>
+              Services
+            </NavLink>
           )}
           {window.location.href === "https://michaelbuffone.net/" ? (
             <Link
@@ -59,19 +81,41 @@ const Navbar = () => {
               smooth={true}
               duration={1000}
               offset={60}
+              onClick={() => setShowLinks(!showLinks)}
             >
               Projects
             </Link>
           ) : (
-            <NavLink to="/">Projects</NavLink>
+            <NavLink to="/" onClick={() => setShowLinks(!showLinks)}>
+              Projects
+            </NavLink>
           )}
-          <NavLink to="about">About Me</NavLink>
-          <NavLink id="contact-media" className="bars" to="contact">
+          <NavLink
+            to="about"
+            onClick={() => {
+              setShowLinks(!showLinks);
+              scroll();
+            }}
+          >
+            About Me
+          </NavLink>
+          <NavLink
+            id="contact-media"
+            className="bars"
+            to="contact"
+            onClick={() => setShowLinks(!showLinks)}
+          >
             Contact Me
           </NavLink>
         </div>
         <div className="contact-link links-media">
-          <NavLink className="btn-contact" to="contact">
+          <NavLink
+            className="btn-contact"
+            to="contact"
+            onClick={() => {
+              scroll();
+            }}
+          >
             Contact Me
           </NavLink>
         </div>

@@ -1,7 +1,6 @@
 import React from "react";
 import { AnimatePresence, motion } from "framer-motion";
 //files
-import footerContacts from "../Footer/FooterContact.js";
 import ContactForm from "./ContactForm.js";
 import Footer from "../Footer/Footer";
 //Scss
@@ -15,8 +14,8 @@ const Contact = () => {
         <motion.div
           id="contact"
           initial={{ opacity: 0 }}
-          animate={{ opacity: 1, transition: { duration: 2 } }}
-          exit={{ opacity: 0 }}
+          animate={{ opacity: 1, transition: { duration: 4 } }}
+          exit={{ opacity: 0, transition: { duration: 4 } }}
         >
           <div className="contact-info">
             <h1>Have a project in mind?</h1>

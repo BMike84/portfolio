@@ -1,15 +1,8 @@
 import React from "react";
-import { BrowserRouter } from "react-router-dom";
-import { motion } from "framer-motion";
 
 // Pages
 import AnimatedRoutes from "./components/Animations/AnimatedRoutes";
 import Navbar from "./components/Navbar/Navbar";
-import ScrollToTop from "./components/Animations/ScrolltoTop";
-// import Contact from "./components/Contact/Contact";
-// import AllProjects from "./components/Projects/AllProjects";
-// import About from "./components/About/About";
-// import Home from "./components/Home/Home";
 
 // Scss
 import "./App.scss";
@@ -53,10 +46,8 @@ library.add(
 function App() {
   return (
     <main>
-      <ScrollToTop>
-        <Navbar />
-        <AnimatedRoutes />
-      </ScrollToTop>
+      <Navbar />
+      <AnimatedRoutes />
     </main>
   );
 }
