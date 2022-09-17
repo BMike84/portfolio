@@ -6,6 +6,7 @@ import Footer from "../Footer/Footer";
 //Scss
 import "./Contact.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { SiUpwork } from "react-icons/si";
 
 const Contact = () => {
   return (
@@ -31,6 +32,16 @@ const Contact = () => {
               </span>
               michael@michaelbuffone.net
             </h3>
+            <a
+              href="https://www.upwork.com/freelancers/~017b7de11424dccba0"
+              target="blank"
+              className="upwork"
+            >
+              <span>
+                <SiUpwork />
+              </span>
+              Upwork Profile
+            </a>
           </div>
           <div className="contact-form">
             <ContactForm />

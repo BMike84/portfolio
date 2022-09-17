@@ -34,12 +34,23 @@
   }
 
   h3 {
-    font-size: 1.2rem;
+    margin-top: 50px;
+    font-size: 1.4rem;
   }
 
   span {
     color: $mainRed;
     padding-right: 15px;
+  }
+
+  .upwork {
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: $lightgrey;
+
+    span {
+      color: $shopifyGreen;
+    }
   }
 }
 
@@ -147,19 +158,30 @@
   .contact-info {
     width: 80%;
     text-align: center;
+    margin-bottom: 30px;
   }
 
   .contact-form {
-    width: 80%;
+    width: 70%;
   }
 }
 
 //phones
 @media only screen and (max-width: 600px) {
   .contact-info {
+    margin-bottom: 30px;
     h3 {
       font-size: 14px;
       color: white;
+    }
+
+    .upwork {
+      font-size: 14px;
+      color: white;
+
+      span {
+        font-size: 16px;
+      }
     }
 
   }
