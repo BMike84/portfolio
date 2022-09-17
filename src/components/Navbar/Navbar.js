@@ -103,7 +103,10 @@ const Navbar = () => {
             id="contact-media"
             className="bars"
             to="contact"
-            onClick={() => setShowLinks(!showLinks)}
+            onClick={() => {
+              setShowLinks(!showLinks);
+              scroll();
+            }}
           >
             Contact Me
           </NavLink>
