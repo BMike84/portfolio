@@ -1,6 +1,7 @@
 @import "../variables";
 
 #about {
+  margin-top: 70px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -115,7 +116,7 @@
   .about-img {
     display: flex;
     justify-content: center;
-    width: 90%;
+    width: 50%;
 
     img {
       height: 300px;
@@ -142,5 +143,11 @@
 
 //phones
 @media only screen and (max-width: 600px) {
+  .about-img {
+    width: 90%;
 
+    .hero-image {
+      height: 200px;
+    }
+  }
 }

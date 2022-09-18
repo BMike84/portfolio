@@ -168,6 +168,9 @@
 
 //phones
 @media only screen and (max-width: 600px) {
+  #contact {
+    margin-top: 0;
+  }
   .contact-info {
     margin-bottom: 30px;
     h3 {

@@ -2,10 +2,10 @@ import { useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import { Link } from "react-scroll";
 import { FaBars } from "react-icons/fa";
+import logo from "../images/logo/bdlogo.png";
 
 //Scss Font Awesome
 import "./Navbar.scss";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Navbar = () => {
   useNavigate();
@@ -42,10 +42,7 @@ const Navbar = () => {
               scroll();
             }}
           >
-            <span>
-              <FontAwesomeIcon icon="fa-solid fa-code" />
-            </span>
-            Michael Buffone
+            <img src={logo} />
           </NavLink>
         </div>
         <div className="links links-media" id={showLinks ? "hidden" : ""}>
