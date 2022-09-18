@@ -34,10 +34,12 @@
   font-size: 18px;
   font-weight: 700;
 
-  a{
+  a {
     background-image: linear-gradient(to right, $mainRed 0%, #b31217  51%, #e52d27  100%);
     background-clip: text;
     color: transparent;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.4rem;
   }
 }
 
@@ -87,15 +89,19 @@
   }
   
   .links {
-    font-size: 15px;
+    // font-size: 15px;
     gap: 1.5rem;
+
+    a {
+      font-size: 1.2rem;
+    }
   }
 
   .contact-link {
     display: flex;
 
     a {
-      font-size: 10px;
+      font-size: 12px;
     }
 
     .btn-contact {
