@@ -40,7 +40,8 @@ const Services = () => {
           Check out my <span>services</span>
         </h1>
         <p>
-          All services come with 100% money back gurantee if your not satisfied
+          All services come with 100% money back guarantee if you are not
+          satisfied
         </p>
       </div>
       <motion.div ref={ref} className="cards" animate={animation}>

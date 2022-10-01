@@ -55,9 +55,9 @@ const About = () => {
                 .
               </h3>
               <h3>
-                I specialize in making shopify stores. It can be rather from
+                I specialize in making Shopify stores. It can be rather from
                 scratch or migrating your existing store from another platform
-                to shopify.
+                to Shopify.
               </h3>
               <h3>
                 I also work with React.js, Ruby on Rails, Node.js and Express.js

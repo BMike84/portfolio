@@ -39,7 +39,7 @@ function ContactForm() {
   };
   return (
     <>
-      <h5>FIll Form Below</h5>
+      <h5>Fill Form Below</h5>
       <form onSubmit={handleSubmit(sendEmail)} ref={form}>
         <div>
           <label>

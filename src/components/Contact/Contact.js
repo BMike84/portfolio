@@ -22,8 +22,8 @@ const Contact = () => {
             <h1>Have a project in mind?</h1>
             <h2>Let's work together!</h2>
             <p>
-              Got a project in mind? Wether it's a shopify store or a custom
-              website. Contact me and let's get started working on making you're
+              Got a project in mind? Whether it's a Shopify store or a custom
+              website, contact me and let's get started working on making your
               dream site.
             </p>
             <h3>
